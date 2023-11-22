@@ -34,17 +34,17 @@ let listaProdotti = [
 let p=250
 
 function filtraPrezzo(listaProdotti){
-    let listafiltrata=[]
+    let listafiltrata=[];
 
     for(let i=0;i<listaProdotti.lenght;i++){
-        if(listaProdotti[i].prezzo>p){
+        if(listaProdotti[i].prezzo<=p){
             listafiltrata.push(listaProdotti[i])
         }
     }
-  return listafiltrata
+  return listafiltrata;
 }
 
-
+ let listafiltrata=filtraPrezzo(listaProdotti)
 
 console.log(listafiltrata)
 

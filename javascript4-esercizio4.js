@@ -9,3 +9,11 @@ console.log(split)
 let split2=split[1]
 
 console.log(split2)
+
+let split3=split2.split("&")
+console.log(split3)
+
+split3.forEach(element=>{
+    let coppia=element.split("=")
+    console.log(coppia[0] +":"+ coppia[1])
+})
