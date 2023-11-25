@@ -25,9 +25,28 @@ let listaProdotti = [
 
 //lista ordinata secondo il nome
 
-let listaordinatanome= listaProdotti.sort(function(prodotto1, prodotto2){
-    return prodotto1.Nome - prodotto2.Nome
-})
+ function ordinealfabetico(prodotto1,prodotto2){
+   
+    let nome1=prodotto1.Nome.toLowerCase()
+    let nome2=prodotto2.Nome.toLowerCase()
+    if(nome1>nome2){
+        return 1
+    }else if(nome1<nome2){
+        return -1
+    }else{
+        return 0
+    }
+    
+    
+    
+    
+
+}
+
+let listaordinata=listaProdotti.sort(ordinealfabetico)
+console.log(listaordinata)
 
 
-    console.log(listaordinatanome)
+
+
+   

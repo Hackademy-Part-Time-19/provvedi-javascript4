@@ -33,13 +33,14 @@ let listaProdotti = [
 
 let p=250
 
-function filtraPrezzo(listaProdotti){
-    let listafiltrata=[];
+function filtraPrezzo(lista){
+   let listafiltrata=[ ];
 
-    for(let i=0;i<listaProdotti.lenght;i++){
-        if(listaProdotti[i].prezzo<=p){
-            listafiltrata.push(listaProdotti[i])
-        }
+    for(let i=0;i<lista.length;i++){
+        if(lista[i].prezzo>p){
+         listafiltrata.push(lista[i])
+         
+         }
     }
   return listafiltrata;
 }
